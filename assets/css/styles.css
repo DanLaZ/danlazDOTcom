@@ -1,0 +1,315 @@
+:root {
+    --main-bg-color: #E5E3C9;
+    --second-color: #B4CFB0;
+    --third-color: #94B49F;
+    --fourth-color: #789395;
+}
+
+html,
+body {
+    height: 100vh;
+    position: relative;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+    background: var(--main-bg-color);
+}
+
+#body_border {
+    margin: auto;
+    border: 15px solid var(--fourth-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fourth-color);
+}
+
+.container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* padding-bottom: 100px;  */
+    /* height of your footer */
+}
+
+.ks-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 15%; 
+    margin: auto;
+}
+
+.span_line {
+    display: inline-block;
+    width: 80%;
+    border-top: 5px solid var(--second-color);
+    border-radius: 5px;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#nav_bar {
+    padding: 5px 20px;
+    /* position: fixed; */
+}
+
+.danlaz_logo {
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+#danlaz_logo_nav {
+    float: left;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: right;
+}
+nav li a {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+nav li a:hover {
+    color: var(--second-color);
+}
+nav li a:active {
+    color: var(--second-color);
+}
+nav li a:focus{
+    color: var(--second-color);
+}
+
+/*About Section*/
+.about_section {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.about_section h1 {
+    font-size: 75px;
+    padding: 0 20px;
+    text-shadow: 3px 1px var(--third-color);
+}
+.about_section h2 {
+    font-size: 25px;
+    padding: 0 20px;
+    letter-spacing: 3px;
+}
+
+.about_section .span_line {
+    width: 60%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+/*Skills Section*/
+.skills_section {
+    width: 100%;
+    /* margin: auto; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+}
+
+.skills_section h3 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+.skills_section ul {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: var(--fourth-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+.skill_list {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    /* height: 300px; */
+    float: left;
+    padding: 10px 20px;
+    /* margin-left: 10px;
+    margin-bottom: 10px; */
+    border: 10px solid var(--fourth-color);
+}
+
+.work_process {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    /* height: 300px; */
+    float: right;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 10px solid var(--fourth-color);
+}
+
+.work_process #email_creating_process {
+    list-style-type: upper-roman;
+}
+.work_process #email_creating_process li {
+    padding: 10px 0;
+}
+
+/*Portfolio Section*/
+.portfolio_section {
+    width: 100%;
+    /* height: 100%; */
+    /* margin: auto; */
+    padding: 10px;
+    /* position: relative; */
+}
+
+.portfolio_section h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+.portfolio_section span {
+    padding: 20px 0;
+}
+
+.div_center {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.portfolio_item {
+    width: 100%;
+    padding: 10px 20px;
+    /* margin: 0 10px; */
+    /* margin-bottom: 10px; */
+    border: 10px solid var(--fourth-color);
+}
+.portfolio_item h3 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+#grid_1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+#grid_2 {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#grid_3 {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+#grid_4 {
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.portfolio_button {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: var(--fourth-color);
+    background: var(--fourth-color);
+    border: none;
+    padding: 5px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+.portfolio_button:hover {
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+    background: var(--second-color);
+    border: 2px solid var(--fourth-color);
+}
+
+/*Contact Section / Footer*/
+.contact_section {
+    color: var(--main-bg-color);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--second-color);
+    background: var(--second-color);
+}
+
+.contact_section h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.contact_section #contact_span_line {
+    border-top: 5px solid var(--third-color);
+}
+
+.contact_section p span {
+    color: var(--third-color);
+    font-size: 30px;
+}
+
+.contact_section a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 15px;
+    color: var(--main-bg-color);
+}
+.contact_section a:hover {
+    color: var(--fourth-color);
+}
+
+#email_styles {
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: var(--fourth-color);
+}
+
+.contact_section #footer_name {
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 0 20px 0;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <style>
+        @media only screen and (max-width: 1210px) {
+            .container {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .about_section {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+        @media only screen and (max-width: 610px) {
+            .div_center {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-column-gap: px;
+                grid-row-gap: 5px;
+            }
+            .portfolio_item  {
+                padding: 5px 10px;
+            }
+            #grid_1 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            #grid_2 {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            #grid_3 {
+                grid-area: 3 / 1 / 4 / 2; 
+            }
+            #grid_4 {
+                grid-area: 4 / 1 / 5 / 2;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            .container {
+                width: 100%;
+            }
+
+            .skills_section{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: px;
+                grid-row-gap: 5px;
+            }
+            .skill_list {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            .work_process {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            @media only screen and (max-width: 520px) {
+                .about_section h1 {
+                    font-size: 40px;
+                    padding: 0 10px;
+                    text-shadow: 3px 1px var(--third-color);
+                }
+            }
+            @media only screen and (max-width: 350px) {
+                #email_styles {
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding-top: 20px;
+                }
+            }
+            @media only screen and (max-width: 323px) {
+                .contact_section p span {
+                    display: none;
+                }
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="body_border">
+        <div class="container">
+            <header>
+                <nav id="nav_bar">
+                    <a href="#">
+                        <img id="danlaz_logo_nav" class="danlaz_logo" src="./assets/img/danlaz_logo_03.png" alt="danlaz logo">
+                    </a>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="about" class="about_section">
+                <h1>Dan LaZenberry</h1>
+                <h2>HTML Email Developer</h2>
+                <span class="span_line"></span>
+            </section>
+            <section id="skills" class="skills_section">
+                <div class="skill_list">
+                    <h3>Skills</h3>
+                    <span class="span_line"></span>
+                    <ul class="">
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>Media Queries</li>
+                        <li>Ghost Tables</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <ul class="">
+                        <li>Litmus</li>
+                        <li>EmailOnAcid</li>
+                    </ul>
+                    <ul class="">
+                        <li>MailChimp</li>
+                        <li>Constant Contact</li>
+                        <li>Campaigner</li>
+                        <li>AWeber</li>
+                    </ul>
+                </div>
+                <div class="work_process">
+                    <h3>Work Process</h3>
+                    <span class="span_line"></span>
+                    <ul id="email_creating_process">
+                        <li>Code email from mockup</li>
+                        <li>Make email responsive using media queries</li>
+                        <li>Test email</li>
+                        <li>Troubleshoot rendering issues</li>
+                        <li>Incorporate code targeting specific mail clients</li>
+                        <li>Launch email campaign</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio" class="portfolio_section">
+                <h2>Portfolio</h2>
+                <span class="span_line"></span>
+                <div class="div_center">
+                    <div id="grid_1" class="portfolio_item">
+                        <h3>Promotional Email</h3>
+                        <span class="span_line"></span>
+                        <img style="width: 100%;" src="./assets/img/placeholder.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsam quod deleniti quos temporibus ea minima facere a. Facere dolor quo cumque excepturi ab. Cumque atque aut totam officia possimus reprehenderit, aperiam laudantium mollitia sint officiis quos maiores incidunt, error animi minima dignissimos! Unde, dolorum!</p>
+                        <a class="portfolio_button" href="#" target="_blank">See Email</a>
+                        <a class="portfolio_button" href="#" target="_blank">See Code</a>
+
+                    </div>
+                    <div id="grid_2" class="portfolio_item">
+                        <h3>Transactional Email</h3>
+                        <span class="span_line"></span>
+                        <img style="width: 100%;" src="./assets/img/placeholder.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, animi omnis? Mollitia, modi? Error nisi recusandae aliquid saepe ullam vitae? Inventore veniam eveniet ullam officiis.</p>
+                        <a class="portfolio_button" href="#" target="_blank">See Email</a>
+                        <a class="portfolio_button" href="#" target="_blank">See Code</a>
+                    </div>
+                    <div id="grid_3" class="portfolio_item">
+                        <h3>Newsletter Email</h3>
+                        <span class="span_line"></span>
+                        <img style="width: 100%;" src="./assets/img/placeholder.png" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ratione assumenda accusantium reiciendis cupiditate! Aperiam?</p>
+                        <a class="portfolio_button" href="#" target="_blank">See Email</a>
+                        <a class="portfolio_button" href="#" target="_blank">See Code</a>
+                    </div>
+                    <div id="grid_4" class="portfolio_item">
+                        <h3>Landing Page</h3>
+                        <span class="span_line"></span>
+                        <img style="width: 100%;" src="./assets/img/placeholder.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit iste ab doloribus sapiente libero? Vitae cumque impedit facilis maiores perspiciatis veritatis iusto ex nihil cupiditate! Culpa, ipsam doloremque. Quidem!</p>
+                        <a class="portfolio_button" href="#" target="_blank">See Email</a>
+                        <a class="portfolio_button" href="#" target="_blank">See Code</a>
+                    </div>
+                </div>
+            </section>
+            <footer id="contact" class="contact_section">
+                <div>
+                    <h2>Contact</h2>
+                    <span id="contact_span_line" class="span_line"></span>
+
+                    <p><a href="mailto:danlazcodes@gmail.com">Email</a> <span>|</span> <a href="#">Resume</a> <span>|</span> <a target="_blank" href="https://www.linkedin.com/in/daniel-lazenberry-038a14181/">LinkedIn</a> <span>|</span> <a target="_blank" href="https://github.com/DanLaZ">Github</a></p>
+
+                    <p id="email_styles">danlazcodes@gmail.com</p>
+
+                    <p id="footer_name"><img class="danlaz_logo" src="./assets/img/danlaz_logo_03.png" alt="Dan LaZ Logo"> Daniel LaZenberry</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
