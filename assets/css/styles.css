@@ -247,6 +247,11 @@ nav li a:focus{
     color: var(--fourth-color);
     font-weight: 600;
 }
+.portfolio_item .disclaimer {
+    font-weight: 200;
+    font-size: 12px;
+    padding-top: 10px;
+}
 
 .portfolio_button {
     color: var(--main-bg-color);
